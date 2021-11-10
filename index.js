@@ -29,7 +29,7 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(express.static('public'));
 
-const router = require('./models/router');
+const router = require('./routers/router');
 app.use('/api/v1', router);
 
 app.get('/', (req, res) => res.status(200)
